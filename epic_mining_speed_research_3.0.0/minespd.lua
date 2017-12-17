@@ -3,6 +3,7 @@ data:extend({
     type = "technology",
     name="mining-speed-upgrade1",
     icon = "__epic_mining_speed_research__/minespd1.png",
+	icon_size = 64,
 	effects =
     {
       {
@@ -27,6 +28,7 @@ data:extend({
     type = "technology",
     name="mining-speed-upgrade2",
     icon = "__epic_mining_speed_research__/minespd2.png",
+	icon_size = 64,
 	effects =
     {
       {
@@ -43,7 +45,7 @@ data:extend({
         {"science-pack-1", 1},
 		{"science-pack-2", 1},
         {"science-pack-3", 1},
-		{"alien-science-pack", 1}
+		{"military-science-pack", 1}
       },
       time = 20
     },
@@ -54,6 +56,7 @@ data:extend({
     type = "technology",
     name="mining-speed-upgrade3",
     icon = "__epic_mining_speed_research__/minespd3.png",
+	icon_size = 64,
 	effects =
     {
       {
@@ -67,14 +70,45 @@ data:extend({
       count = 400,
       ingredients =
       {
-        {"science-pack-1", 1},
-		{"science-pack-2", 1},
+        {"science-pack-1", 2},
+		{"science-pack-2", 2},
         {"science-pack-3", 1},
-		{"alien-science-pack", 1}
+		{"military-science-pack", 1},
+		{"production-science-pack", 1}
       },
       time = 40
     },
 	upgrade = true,
     order="c-k-f-c",
+	},
+	{
+    type = "technology",
+    name="mining-speed-upgrade4",
+    icon = "__epic_mining_speed_research__/minespd4.png",
+	icon_size = 64,
+	effects =
+    {
+      {
+        type = "character-mining-speed",
+        modifier = 4
+      }
+    },
+	prerequisites = {"mining-speed-upgrade3"},
+    unit =
+    {
+      count = 400,
+      ingredients =
+      {
+        {"science-pack-1", 2},
+		{"science-pack-2", 2},
+        {"science-pack-3", 2},
+		{"military-science-pack", 1},
+		{"production-science-pack", 1},
+		{"high-tech-science-pack", 1}
+      },
+      time = 60
+    },
+	upgrade = true,
+    order="c-k-f-d",
 	}
 })
