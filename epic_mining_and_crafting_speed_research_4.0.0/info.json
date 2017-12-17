@@ -1,0 +1,11 @@
+{
+  "name": "epic_mining_and_crafting_speed_research",
+  "version": "4.0.0",
+  "title": "Mining and Crafting Speed Research",
+  "author": "Epic",
+  "contact": "twitch.tv/epicgamingvideos",
+  "homepage": "http://twitch.tv/epicgamingvideos",
+  "description": "Adds researches to upgrade the mining and crafting speed of your character",
+  "dependencies": ["base >= 0.16"],
+  "factorio_version": "0.16"
+}
