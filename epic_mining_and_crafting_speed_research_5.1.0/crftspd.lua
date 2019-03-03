@@ -2,13 +2,13 @@ data:extend(
    {
       {
          type = "technology",
-         name = "mining-speed-upgrade1",
-         icon = "__epic_mining_and_crafting_speed_research__/minespd1.png",
+         name = "crafting-speed-upgrade1",
+         icon = "__epic_mining_and_crafting_speed_research__/crftspd1.png",
          icon_size = 64,
          effects =
          {
             {
-               type = "character-mining-speed",
+               type = "character-crafting-speed",
                modifier = 0.5
             }
          },
@@ -25,17 +25,17 @@ data:extend(
       },
       {
          type = "technology",
-         name = "mining-speed-upgrade2",
-         icon = "__epic_mining_and_crafting_speed_research__/minespd2.png",
+         name = "crafting-speed-upgrade2",
+         icon = "__epic_mining_and_crafting_speed_research__/crftspd2.png",
          icon_size = 64,
          effects =
          {
             {
-               type = "character-mining-speed",
+               type = "character-crafting-speed",
                modifier = 1
             }
          },
-         prerequisites = {"mining-speed-upgrade1"},
+         prerequisites = {"crafting-speed-upgrade1"},
          unit =
          {
             count = 200,
@@ -51,17 +51,17 @@ data:extend(
       },
       {
          type = "technology",
-         name = "mining-speed-upgrade3",
-         icon = "__epic_mining_and_crafting_speed_research__/minespd3.png",
+         name = "crafting-speed-upgrade3",
+         icon = "__epic_mining_and_crafting_speed_research__/crftspd3.png",
          icon_size = 64,
          effects =
          {
             {
-               type = "character-mining-speed",
+               type = "character-crafting-speed",
                modifier = 2
             }
          },
-         prerequisites = {"mining-speed-upgrade2"},
+         prerequisites = {"crafting-speed-upgrade2"},
          unit =
          {
             count = 400,
@@ -78,17 +78,17 @@ data:extend(
       },
       {
          type = "technology",
-         name = "mining-speed-upgrade4",
-         icon = "__epic_mining_and_crafting_speed_research__/minespd4.png",
+         name = "crafting-speed-upgrade4",
+         icon = "__epic_mining_and_crafting_speed_research__/crftspd4.png",
          icon_size = 64,
          effects =
          {
             {
-               type = "character-mining-speed",
+               type = "character-crafting-speed",
                modifier = 4
             }
          },
-         prerequisites = {"mining-speed-upgrade3"},
+         prerequisites = {"crafting-speed-upgrade3"},
          unit =
          {
             count = 400,
@@ -106,16 +106,16 @@ data:extend(
       },
       {
          type = "technology",
-         name = "mining-speed-upgrade5",
-         icon = "__epic-crafting-miningspeed-research__/minespd5.png",
+         name = "crafting-speed-upgrade5",
+         icon = "__epic_mining_and_crafting_speed_research__/crftspd5.png",
          icon_size = 64,
          effects = {
             {
-               type = "character-mining-speed",
+               type = "character-crafting-speed",
                modifier = 8
             }
          },
-         prerequisites = {"mining-speed-upgrade4"},
+         prerequisites = {"crafting-speed-upgrade4"},
          unit = {
             count = 1000,
             ingredients = {
