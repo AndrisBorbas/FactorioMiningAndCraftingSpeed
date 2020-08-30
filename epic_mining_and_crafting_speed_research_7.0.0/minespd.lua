@@ -1,3 +1,9 @@
+MS1 = settings.startup["mining-speed-1"].value
+MS2 = settings.startup["mining-speed-2"].value
+MS3 = settings.startup["mining-speed-3"].value
+MS4 = settings.startup["mining-speed-4"].value
+MS5 = settings.startup["mining-speed-5"].value
+
 data:extend(
    {
       {
@@ -9,7 +15,7 @@ data:extend(
          {
             {
                type = "character-mining-speed",
-               modifier = 0.5
+               modifier = MS1
             }
          },
          unit =
@@ -32,7 +38,7 @@ data:extend(
          {
             {
                type = "character-mining-speed",
-               modifier = 1
+               modifier = MS2
             }
          },
          prerequisites = {"mining-speed-upgrade1"},
@@ -58,7 +64,7 @@ data:extend(
          {
             {
                type = "character-mining-speed",
-               modifier = 2
+               modifier = MS3
             }
          },
          prerequisites = {"mining-speed-upgrade2"},
@@ -85,7 +91,7 @@ data:extend(
          {
             {
                type = "character-mining-speed",
-               modifier = 4
+               modifier = MS4
             }
          },
          prerequisites = {"mining-speed-upgrade3"},
@@ -112,7 +118,7 @@ data:extend(
          effects = {
             {
                type = "character-mining-speed",
-               modifier = 8
+               modifier = MS5
             }
          },
          prerequisites = {"mining-speed-upgrade4"},

@@ -1,3 +1,9 @@
+CS1 = settings.startup["crafting-speed-1"].value
+CS2 = settings.startup["crafting-speed-2"].value
+CS3 = settings.startup["crafting-speed-3"].value
+CS4 = settings.startup["crafting-speed-4"].value
+CS5 = settings.startup["crafting-speed-5"].value
+
 data:extend(
    {
       {
@@ -9,7 +15,7 @@ data:extend(
          {
             {
                type = "character-crafting-speed",
-               modifier = 0.5
+               modifier = CS1
             }
          },
          unit =
@@ -32,7 +38,7 @@ data:extend(
          {
             {
                type = "character-crafting-speed",
-               modifier = 1
+               modifier = CS2
             }
          },
          prerequisites = {"crafting-speed-upgrade1"},
@@ -58,7 +64,7 @@ data:extend(
          {
             {
                type = "character-crafting-speed",
-               modifier = 2
+               modifier = CS3
             }
          },
          prerequisites = {"crafting-speed-upgrade2"},
@@ -85,7 +91,7 @@ data:extend(
          {
             {
                type = "character-crafting-speed",
-               modifier = 4
+               modifier = CS4
             }
          },
          prerequisites = {"crafting-speed-upgrade3"},
@@ -112,7 +118,7 @@ data:extend(
          effects = {
             {
                type = "character-crafting-speed",
-               modifier = 8
+               modifier = CS5
             }
          },
          prerequisites = {"crafting-speed-upgrade4"},
